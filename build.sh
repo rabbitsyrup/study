@@ -1,11 +1,11 @@
 #!/bin/bash
 
-sudo docker-compose down
+docker-compose down
 
-sudo gradlew bootjar
+gradlew bootjar
 
-sudo docker-compose build
+docker-compose build
 
-sudo docker image prune -f
+docker image prune -f
 
-sudo docker-compose up -d
+docker-compose up -d
