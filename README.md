@@ -36,3 +36,4 @@ reference & troubleshooting
   - [the-simple-way-to-run-docker-in-docker-for-ci](https://tutorials.releaseworksacademy.com/learn/the-simple-way-to-run-docker-in-docker-for-ci) docker-compose 빠져있음
   - [docker-compose 설치](https://nirsa.tistory.com/76) 그냥 jenkins 공식 이미지에다가 docker-ce와 docker-compose를 설치함
   - [실행중인 container에 port or volume 추가](https://medium.com/sjk5766/%EC%8B%A4%ED%96%89%EC%A4%91%EC%9D%B8-container%EC%97%90-port-or-volume-%EC%B6%94%EA%B0%80-ae8889344c68)
+  - [[Spring]Jenkins(젠킨스)를 활용한 스프링부트 앱 간단 배포하기](https://pjh3749.tistory.com/261)
