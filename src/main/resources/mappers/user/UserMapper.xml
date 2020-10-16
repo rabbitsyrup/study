@@ -5,11 +5,11 @@
 <mapper namespace="com.rabbitsyrup.study.user.dao.UserDAO">
 
 	<select id="selectUsers" parameterType="Map" resultType="Map">
-		SELECT SEQ, ID, NAME
-		FROM USER
+		SELECT seq, id, name
+		FROM user
 		WHERE 1 = 1
 		<if test="name != null and name != ''">
-		AND NAME LIKE '%' || #{name} || '%'
+		AND name LIKE '%' || #{name} || '%'
 		</if>
 	</select>
 	

@@ -20,7 +20,7 @@ public class UserController {
     @RequestMapping(value="/users")
 	public List<Map<String, Object>> users(@RequestParam(value="name", defaultValue="") String name) throws Exception {
     	Map<String, Object> param = new HashMap<String, Object>();
-    	param.put("NAME", name);
+    	param.put("name", name);
     	
 		return userService.selectUsers(param);
 	}
