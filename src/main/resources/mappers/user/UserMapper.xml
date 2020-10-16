@@ -5,7 +5,7 @@
 <mapper namespace="com.rabbitsyrup.study.user.dao.UserDAO">
 
 	<select id="selectUsers" parameterType="Map" resultType="Map">
-		SELECT seq, id, name
+		SELECT id, pw, name
 		FROM user
 		WHERE 1 = 1
 		<if test="name != null and name != ''">
