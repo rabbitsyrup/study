@@ -6,5 +6,4 @@ chmod +x gradlew && \
 docker-compose build && \
 docker image prune -f
 
-JENKINS_NODE_COOKIE=dontKillMe ./start.sh
-sh ./start.sh
+sh 'JENKINS_NODE_COOKIE=dontKillMe ./start.sh'
