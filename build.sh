@@ -6,6 +6,6 @@ chmod +x gradlew && \
 docker-compose build && \
 docker image prune -f
 
-BUILD_ID=dontKillMe ./start.sh
-JENKINS_NODE_COOKIE=dontKillMe ./start.sh
-sh ./start.sh
+BUILD_ID=dontKillMe docker-compose up -d
+JENKINS_NODE_COOKIE=dontKillMe docker-compose up -d
+docker-compose up -d
