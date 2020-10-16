@@ -32,6 +32,6 @@ Workflow
 reference & troubleshooting
 -------------
 - Docker
-  - [Docker inside Docker for Jenkins](https://itnext.io/docker-inside-docker-for-jenkins-d906b7b5f527)
-  - [the-simple-way-to-run-docker-in-docker-for-ci](https://tutorials.releaseworksacademy.com/learn/the-simple-way-to-run-docker-in-docker-for-ci) docker-compose 안됨
+  - [Docker inside Docker for Jenkins](https://itnext.io/docker-inside-docker-for-jenkins-d906b7b5f527) docker-compose.yml 오류남
+  - [the-simple-way-to-run-docker-in-docker-for-ci](https://tutorials.releaseworksacademy.com/learn/the-simple-way-to-run-docker-in-docker-for-ci) docker-compose 빠져있음
   - [실행중인 container에 port or volume 추가](https://medium.com/sjk5766/%EC%8B%A4%ED%96%89%EC%A4%91%EC%9D%B8-container%EC%97%90-port-or-volume-%EC%B6%94%EA%B0%80-ae8889344c68)
