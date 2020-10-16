@@ -1,7 +1,6 @@
 tmp/
 config/
 bin/
-gradle/
 
 ### Auto Generated Below ###
 HELP.md
