@@ -1,4 +1,4 @@
-study ㅅㄷㄴㅅ
+study
 =============
 simple project for personal study
 
