@@ -6,11 +6,11 @@
 </head>
 <body>
 	<h1>Thymeleaf 예제</h1>
-	<span th:text="${user.id}"></span>
+	<p th:each="user : ${users}" th:text="${user.id}"></p>
 	<br />
-	<span th:text="${user.pw}"></span>
+	<p th:each="user : ${users}" th:text="${user.pw}"></p>
 	<br />
-	<span th:text="${user.name}"></span>
+	<p th:each="user : ${users}" th:text="${user.name}"></p>
 	<br />
 </body>
 </html>

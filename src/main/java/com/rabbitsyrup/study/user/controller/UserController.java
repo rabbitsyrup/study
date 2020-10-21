@@ -21,7 +21,7 @@ public class UserController {
 	public String test(Model model, @RequestParam(value="name", defaultValue="") String name) throws Exception {
     	Map<String, Object> param = new HashMap<String, Object>();
     	param.put("name", name);
-    	model.addAttribute("user", userService.selectUsers(param));
+    	model.addAttribute("users", userService.selectUsers(param));
 		return "test";
 	}
 }
