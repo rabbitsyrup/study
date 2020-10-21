@@ -1,10 +1,10 @@
 package com.rabbitsyrup.study.user.controller;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,11 +17,11 @@ public class UserController {
     @Autowired
     private UserService userService;
      
-    @RequestMapping(value="/users")
-	public List<Map<String, Object>> users(@RequestParam(value="name", defaultValue="") String name) throws Exception {
+    @RequestMapping(value="/test")
+	public String test(@RequestParam(value="name", defaultValue="") String name, Model model) throws Exception {
     	Map<String, Object> param = new HashMap<String, Object>();
     	param.put("name", name);
-    	
-		return userService.selectUsers(param);
+    	model.addAttribute("user", userService.selectUsers(param));
+		return "test";
 	}
 }
