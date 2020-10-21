@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/default_layout">
 <head>
-<meta charset="UTF-8">
-<title>Thymeleaf 예제</title>
+	<meta charset="UTF-8">
+	<title>Thymeleaf 예제</title>
 </head>
 <body>
-	<h1>Thymeleaf 예제</h1>
-	<p th:each="user : ${users}" th:text="${user.id}"></p>
-	<br />
-	<p th:each="user : ${users}" th:text="${user.pw}"></p>
-	<br />
-	<p th:each="user : ${users}" th:text="${user.name}"></p>
-	<br />
+	<div layout:fragment="content">
+		<h1>Thymeleaf 예제</h1>
+		<p th:each="user : ${users}" th:text="${user.id}"></p>
+		<br />
+		<p th:each="user : ${users}" th:text="${user.pw}"></p>
+		<br />
+		<p th:each="user : ${users}" th:text="${user.name}"></p>
+		<br />
+	</div>
 </body>
 </html>
