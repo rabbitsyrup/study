@@ -5,7 +5,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@PropertySource("file:/conf/config.properties")
+@PropertySource(value = "file:/conf/config.properties", ignoreResourceNotFound = true)
+@PropertySource(value = "file:C:/dev/eclipse-workspace/study/config/app/conf/config.properties", ignoreResourceNotFound = true) //로컬 경로로 변경 필요
 public class GlobalPropertySource {
 
     @Value("${spring.datasource.driver-class-name}")
